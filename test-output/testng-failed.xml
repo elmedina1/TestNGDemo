@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listener.ListenersTest"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="saucedemofail.SauceDemoTest">
+        <methods>
+          <include name="getUrl"/>
+          <include name="setUp"/>
+          <include name="getScreenshotOnMetFail"/>
+        </methods>
+      </class> <!-- saucedemofail.SauceDemoTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
